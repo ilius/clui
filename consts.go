@@ -214,6 +214,8 @@ const (
 	// window-like controls (button, radiogroup...)
 	ColorControlText         = "ControlText"
 	ColorControlBack         = "ControlBack"
+	ColorControlPressedText  = "ControlPressedText"
+	ColorControlPressedBack  = "ControlPressedBack"
 	ColorControlActiveBack   = "ControlActiveBack"
 	ColorControlActiveText   = "ControlActiveText"
 	ColorControlDisabledBack = "ControlDisabledBack"

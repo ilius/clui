@@ -3,12 +3,13 @@ package clui
 import (
 	"bufio"
 	"fmt"
-	term "github.com/nsf/termbox-go"
 	"io/ioutil"
 	"os"
 	"strings"
 	"sync"
 	"unicode/utf8"
+
+	term "github.com/nsf/termbox-go"
 )
 
 /*
@@ -155,6 +156,8 @@ func ThemeReset() {
 
 	defTheme.colors[ColorControlText] = ColorWhite
 	defTheme.colors[ColorControlBack] = ColorBlack
+	defTheme.colors[ColorControlPressedText] = ColorWhiteBold
+	defTheme.colors[ColorControlPressedBack] = ColorGreen
 	defTheme.colors[ColorControlActiveText] = ColorWhite
 	defTheme.colors[ColorControlActiveBack] = ColorMagenta
 	defTheme.colors[ColorControlShadow] = ColorBlue
