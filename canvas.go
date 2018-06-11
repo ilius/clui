@@ -276,12 +276,12 @@ func DrawText(x, y int, text string) {
 			SetBackColor(elem.Bg)
 			drawn := PutChar(x, y, elem.Ch)
 
-			if unicode.Is(unicode.Scripts["Han"], elem.Ch){
+			if unicode.Is(unicode.Scripts["Han"], elem.Ch) {
 				x += 2
 			} else {
 				x += 1
 			}
-			
+
 			if firstdrawn && !drawn {
 				break
 			}
